@@ -10731,10 +10731,19 @@ textarea.form-control-lg {
   }
 }
 body {
-  background-color: aqua;
+  background-color: #F6F6F6;
+  width: 100vw;
+  min-width: 100vh;
 }
-body h1, body .h1 {
-  color: blueviolet;
+
+.li-bar {
+  width: 1.2px;
+  background-color: #d9d9d9;
+  height: 1rem;
+}
+
+.nav-icon {
+  font-size: 1.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

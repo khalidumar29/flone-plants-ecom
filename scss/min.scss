@@ -5,8 +5,17 @@ sans-serif;
 @import "../node_modules/bootstrap/scss/bootstrap";
 //all coustome code
 body {
-    background-color: aqua;
-    h1 {
-        color: blueviolet;
-    }
+    background-color: #F6F6F6;
+    width: 100vw;
+    min-width: 100vh;
+}
+
+.li-bar {
+    width: 1.2px;
+    background-color: #d9d9d9;
+    height: 1rem;
+}
+
+.nav-icon {
+    font-size: 1.3rem;
 }
