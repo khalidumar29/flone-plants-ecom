@@ -10756,7 +10756,6 @@ body {
 
 .custom-drop-down:hover {
   cursor: pointer;
-  color: #B05DFE;
 }
 
 .custom-drop-down:hover ul {
@@ -10777,11 +10776,6 @@ body {
 .custom-drop-down ul li {
   padding: 5px;
   margin-left: 4px;
-}
-
-.custom-drop-down ul li:hover {
-  cursor: pointer;
-  color: #B05DFE;
 }
 
 .second-dropdown {
@@ -10824,7 +10818,7 @@ body {
 
 .mega-dd-i:hover {
   transform: translatex(15px);
-  color: #B05DFE;
+  color: #6a646e;
   list-style: disc;
 }
 
@@ -10834,31 +10828,20 @@ body {
 
 .pages-dpd {
   position: relative;
-  margin: 0 7px;
-}
-
-.pages-dpd:hover {
-  cursor: pointer;
-  color: #B05DFE;
 }
 
 .pages-dpd:hover ul {
   display: block;
   cursor: pointer;
   background: #F6F6F6;
+  list-style: disc;
+  color: #B05DFE;
 }
 
 .pages-dpd ul {
   display: none;
-  box-shadow: 0 1px 7px -2px rgba(0, 0, 0, 0.3);
   position: absolute;
-  min-width: 200px;
-  padding: 25px;
+  min-width: 250px;
 }
 
-.contact-hover:hover {
-  color: #B05DFE;
-  cursor: pointer;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.csssass.map */
