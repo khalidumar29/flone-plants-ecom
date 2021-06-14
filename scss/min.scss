@@ -19,3 +19,31 @@ body {
 .nav-icon {
     font-size: 1.3rem;
 }
+
+.custom-drop-down {
+    position: relative;
+}
+
+.custom-drop-down:hover {
+    cursor: pointer;
+}
+
+.custom-drop-down:hover ul {
+    display: block;
+    cursor: pointer;
+}
+
+.custom-drop-down ul {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 120px;
+    box-shadow: 0 1px 7px -2px rgb(0 0 0 / 30%);
+    z-index: 100;
+    transition: all 1.5s;
+}
+
+.custom-drop-down ul li {
+    padding: 5px;
+    margin-left: 4px;
+}
