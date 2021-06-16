@@ -80,12 +80,18 @@ body {
     position: absolute;
     min-width: 700px;
     padding: 27px;
+    background: #fff;
 }
 
 .mega-dropdown-tittle {
     font-size: 16px;
     color: rgb(36, 36, 36);
     font-weight: 600;
+}
+
+.mega-dropdown-tittle:hover {
+    color: #B05DFE;
+    transform: translateX(5px);
 }
 
 .mega-dd-i {
