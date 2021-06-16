@@ -140,3 +140,67 @@ body {
     color: #B05DFE;
     cursor: pointer;
 }
+
+#carouselExampleControls {
+    position: relative;
+}
+
+.carousel-inner {
+    height: 500px;
+    z-index: -100;
+    position: absolute;
+}
+
+.carousel-control-prev {
+    margin-left: -10rem;
+}
+
+.carousel-control-next {
+    margin-right: -10rem;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+    margin-top: 250px;
+}
+
+.slider-1 {
+    margin-top: 123px;
+}
+
+.slider-1h1 {
+    font-size: 78px;
+    line-height: 121px;
+}
+
+.btn-outline-secondary {
+    width: 164px;
+    padding: 14px;
+    margin-left: 16px;
+    margin-top: 15px;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #A749FF;
+}
+
+.dily-animate1 {
+    animation-delay: 1s;
+}
+
+.dily-animate2 {
+    animation-delay: 1.3s;
+}
+
+.dily-animate3 {
+    animation-delay: 1.5s;
+}
+
+.dily-animate4 {
+    animation-delay: 1.7s;
+}
+
+.fade-effect {
+    background: #fff;
+}
