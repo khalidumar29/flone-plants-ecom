@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,500;1,600&display=swap');
 $font-family-sans-serif: 'Poppins',
 sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap');
+$font-family: 'Cormorant Garamond',
+serif;
 @import "../node_modules/bootstrap/scss/bootstrap";
 //all coustome code
 body {
@@ -71,6 +74,8 @@ body {
 .second-dropdown:hover ul {
     display: block;
     cursor: pointer;
+    position: absolute;
+    z-index: 999;
 }
 
 .second-dropdown ul {
@@ -134,6 +139,7 @@ body {
     position: absolute;
     min-width: 200px;
     padding: 25px;
+    z-index: 999;
 }
 
 .contact-hover:hover {
@@ -143,12 +149,11 @@ body {
 
 #carouselExampleControls {
     position: relative;
+    display: block;
 }
 
 .carousel-inner {
     height: 500px;
-    z-index: -100;
-    position: absolute;
 }
 
 .carousel-control-prev {
@@ -203,4 +208,56 @@ body {
 
 .fade-effect {
     background: #fff;
+}
+
+//baner cards
+.banner-cards {
+    position: relative;
+    border: 4px solid #FFFFFF;
+    margin: 6rem 0;
+    overflow: hidden;
+    img {
+        width: 100%;
+        transform: scale(1.00);
+        transition: all 0.5s ease 0s;
+    }
+    &:hover img {
+        transform: scale(1.2);
+    }
+    .banner-content {
+        position: absolute;
+        content: "";
+        top: 40px;
+        left: 36px;
+        h3 {
+            font-size: 36px;
+            font-family: "cormorant garamond";
+            font-weight: 600;
+            color: #617d05;
+            line-height: 30px;
+        }
+        h4 {
+            font-size: 18px;
+            font-family: "cormorant garamond";
+            font-weight: 600;
+            line-height: 24px;
+            color: #010101;
+            margin: 0 0 80px 0;
+            span {
+                color: #617d05;
+            }
+        }
+        a {
+            border: 2px solid #617d05;
+            border-radius: 100%;
+            width: 60px;
+            i {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 25px;
+                padding: 4px;
+                color: #617d05;
+            }
+        }
+    }
 }
