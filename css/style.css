@@ -10985,4 +10985,51 @@ body {
   color: #617d05;
 }
 
+.section-tittle h1, .section-tittle .h1 {
+  font-family: poppins, sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000;
+  margin-bottom: 15px;
+  position: relative;
+  text-align: center !important;
+  display: inline;
+}
+.section-tittle h1::after, .section-tittle .h1::after,
+.section-tittle h1::before,
+.section-tittle .h1::before {
+  top: 17px;
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  background-color: #000;
+  content: "";
+}
+.section-tittle h1::after, .section-tittle .h1::after {
+  right: -100px;
+}
+.section-tittle h1::before, .section-tittle .h1::before {
+  left: -100px;
+}
+
+.tablist {
+  justify-content: center;
+}
+.tablist .nav-link {
+  color: #555;
+  padding: 40px;
+}
+.tablist .nav-link h4, .tablist .nav-link .h4 {
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 1.3s ease 0s;
+}
+.tablist .nav-link .active,
+.tablist .nav-link h4:hover,
+.tablist .nav-link .h4:hover {
+  cursor: pointer;
+  color: #000;
+}
+
 /*# sourceMappingURL=style.css.map */
