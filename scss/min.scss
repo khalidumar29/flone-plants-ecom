@@ -625,10 +625,14 @@ body {
             list-style: outside none none;
             li {
                 margin: 0 0 11px;
+                transition: all 0.2s;
                 a {
                     letter-spacing: 0.3px;
                     color: #5d5d5d;
                     text-decoration: none;
+                    &:hover {
+                        color: #AC51FF;
+                    }
                 }
             }
         }

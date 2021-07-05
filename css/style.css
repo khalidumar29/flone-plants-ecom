@@ -11340,11 +11340,15 @@ body {
 }
 .footer-area .footer-widget ul li {
   margin: 0 0 11px;
+  transition: all 0.2s;
 }
 .footer-area .footer-widget ul li a {
   letter-spacing: 0.3px;
   color: #5d5d5d;
   text-decoration: none;
+}
+.footer-area .footer-widget ul li a:hover {
+  color: #AC51FF;
 }
 .footer-area .footer-widget .subscribe-style p {
   margin: 0 0 20px;
