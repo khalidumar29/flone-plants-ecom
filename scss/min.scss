@@ -94,6 +94,17 @@ body {
     font-weight: 600;
 }
 
+.mega-dropdown-tittle>a {
+    font-size: 16px;
+    color: rgb(36, 36, 36);
+    font-weight: 600;
+    text-decoration: none;
+    &:hover {
+        color: #B05DFE;
+        transform: translateX(5px);
+    }
+}
+
 .mega-dropdown-tittle:hover {
     color: #B05DFE;
     transform: translateX(5px);
@@ -105,6 +116,10 @@ body {
     font-weight: 300;
     transition: all 0.8s;
     padding-top: 5px;
+    a {
+        text-decoration: none;
+        color: rgb(36, 36, 36);
+    }
 }
 
 .mega-dd-i:hover {
@@ -642,6 +657,359 @@ body {
             font-size: 14px;
             font-weight: 400;
             line-height: 24px;
+        }
+    }
+}
+
+//------------------------------layout desigtn
+// lay out finder design
+.breadcrumb-content span>span {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 0;
+    a {
+        font-weight: 500;
+        color: #5b5858;
+        text-decoration: none;
+        transition: all 0.3s;
+        &:hover {
+            color: #a749ff;
+        }
+    }
+}
+
+//shop side lauout design
+.sidebar-wrapper {
+    .sidebar-tittle>h4 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #333;
+    }
+    .sidebar-search {
+        border: 1px solid black;
+        width: 80%;
+        border: 1px solid #e6e6e6;
+        margin: 15px 0;
+        input {
+            border: none;
+            outline: none;
+            padding: 10px 10px;
+            width: 80%;
+            height: 43px;
+            padding: 2px 55px 2px 18px;
+            color: #000;
+            background: transparent none repeat scroll 0 0;
+        }
+        button {
+            margin-right: 10px;
+            height: 100%;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            cursor: pointer;
+            color: #e6e6e6;
+            transition: all 0.3s;
+            &:hover {
+                color: #a749ff;
+                cursor: pointer;
+            }
+        }
+    }
+    .sidebar-categoriey {
+        .cat-tittle {
+            margin: 50px 0;
+            h3 {
+                font-size: 16px;
+                font-weight: 500;
+                color: #333;
+            }
+        }
+    }
+    .side-list {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: outside none;
+            li {
+                position: relative;
+                align-items: center;
+                padding: 0 0 0 15px;
+                .sidebar-widget-list>button {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                    border: none;
+                    text-transform: capitalize;
+                    background: none;
+                    padding: 0 0 0 30px;
+                    .checkmark {
+                        position: absolute;
+                        left: 0;
+                        width: 15px;
+                        height: 15px;
+                        border: 2px solid #888;
+                        border-radius: 3px;
+                        background-color: #fff;
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+    }
+    .sidebar-widget-tag {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: outside none none;
+            li {
+                display: inline-block;
+                margin: 0 10px 15px 0;
+                button {
+                    line-height: 1;
+                    display: inline-block;
+                    padding: 9px 17px 12px;
+                    text-transform: capitalize;
+                    color: #424242;
+                    border-radius: 50px;
+                    background: none;
+                    background-color: #f6f6f6;
+                    border: none;
+                    transition: all 0.3s;
+                    &:hover {
+                        background-color: #a749ff;
+                        color: #f1f1f1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// shop cards design
+.shop-top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .select-shoing-wrap {
+        display: flex;
+        .shop-select {
+            margin-right: 50px;
+            select {
+                outline: none;
+                font-size: 14px;
+                min-width: 143px;
+                padding: 5px;
+                color: #606060;
+                border: 1px solid #e6e6e6;
+            }
+        }
+    }
+    p {
+        margin: 0;
+        color: #606060;
+    }
+    .shop-tab {
+        button:first-child {
+            margin: 0;
+        }
+        button {
+            font-size: 18px;
+            margin-left: 20px;
+            padding: 0;
+            color: #606060;
+            border: none;
+            background: none;
+        }
+    }
+}
+
+//pages slider
+.page-changer {
+    margin-top: 15px;
+    ul {
+        list-style: none;
+        li {
+            display: inline-block;
+            background-color: #FFFFFF;
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+            margin-right: 8px;
+            padding: 9px;
+            border-radius: 100%;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 12px 0.8px !important;
+            transition: all 0.3s;
+            &:hover {
+                background-color: #a749ff;
+                a {
+                    color: #FFFFFF;
+                }
+            }
+            a {
+                color: #a749ff;
+                text-decoration: none;
+            }
+        }
+        li:first-child {
+            background-color: #a749ff !important;
+            a {
+                color: #FFFFFF !important;
+            }
+        }
+    }
+}
+
+//login form design
+.log-form {
+    margin: 30px 0;
+    .login-tittle {
+        margin: 30px 0;
+        span {
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #000;
+            text-transform: capitalize;
+        }
+        span:first-child {
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #a749ff;
+        }
+    }
+    .login-form {
+        margin: 43px 0 0 340px;
+        box-shadow: rgb(0 0 0 / 10%) 0px 0px 6px;
+        overflow: hidden;
+        width: 50%;
+        .login-bar {
+            box-shadow: rgb(0 0 0 / 10%) 0px 0px 6px;
+            width: 100%;
+            overflow: hidden;
+            margin-left: 0px;
+            padding: 31px 0;
+            .inputer {
+                input {
+                    display: block;
+                    width: 70%;
+                    outline: none;
+                    margin: 38px 0 10px 85px;
+                    height: 35px;
+                    background-color: transparent;
+                    border: 1px solid #ebebeb;
+                    color: #333;
+                    font-size: 14px;
+                    height: 45px;
+                }
+            }
+            .chekup {
+                display: flex;
+                margin: 30px 0 20px 89px;
+                text-align: left;
+                justify-content: space-between;
+                width: 70%;
+                .cheker {
+                    display: flex;
+                    align-items: center;
+                    input {
+                        margin: 3px 5px 0 0;
+                    }
+                }
+                span {
+                    a {
+                        text-decoration: none;
+                        color: #313131;
+                        transition: all 0.3s;
+                        &:hover {
+                            color: #a749ff;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .login-btn {
+                text-align: left;
+                margin: 60px 82px;
+                button {
+                    background-color: #f2f2f2;
+                    border: none;
+                    color: #333;
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 1;
+                    padding: 11px 30px;
+                    text-transform: uppercase;
+                    transition: all .3s ease 0s;
+                    &:hover {
+                        background-color: #a749ff;
+                        color: #F6F6F6;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//product-view
+.img-view {
+    margin: 30px 0;
+    .pro-view {
+        margin: 10px 0;
+    }
+}
+
+.pro-details-wrapper {
+    margin: 30px 0;
+    h3 {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #000;
+        margin-bottom: 33px;
+    }
+    .price {
+        color: red;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    .star-i-group {
+        margin-bottom: 20px;
+        i {
+            color: yellow;
+        }
+    }
+    .star-i-group>i:last-child {
+        color: gray;
+    }
+    p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 39px;
+    }
+    button {
+        background-color: #000;
+        color: white;
+        border: none;
+        padding: 10px 10px;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .cat {
+        margin-top: 10px;
+        line-height: 40px;
+    }
+    .social {
+        margin-top: 10px;
+        i {
+            font-size: 25px;
+            margin-right: 10px;
         }
     }
 }
