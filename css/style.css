@@ -10888,7 +10888,6 @@ body {
 
 #carouselExampleControls {
   position: relative;
-  display: block;
 }
 
 .carousel-inner {
@@ -11654,6 +11653,7 @@ body {
 .img-view .pro-view {
   margin: 10px 0;
 }
+
 .pro-details-wrapper {
   margin: 30px 0;
 }
